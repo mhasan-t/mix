@@ -13,7 +13,7 @@ export default function ProductItem({ product }: any) {
 	function addToCart(product: any) {}
 
 	return (
-		<div className="bg-white rounded-md shadow-sm flex flex-col gap-1 w-60 h-auto justify-center align-center text-center p-4">
+		<div className="bg-white rounded-md shadow-sm flex flex-col gap-1 w-72 h-auto justify-center align-center text-center p-4">
 			<img
 				src={"http://placekitten.com/300/300"}
 				alt={product.title}
