@@ -5,7 +5,7 @@ import React from "react";
 export default function Pride() {
 	return (
 		<div className="w-full">
-			<div className="w-full flex flex-col gap-8 md:flex-row md:justify-around">
+			<div className="w-full flex flex-col gap-8 md:grid md:grid-cols-2 lg:flex md:justify-around">
 				<div className="flex flex-col justify-center items-center">
 					<FontAwesomeIcon
 						icon={faCar}

@@ -30,7 +30,7 @@ export default function FeaturedProducts() {
 			<div className="text-4xl font-bold text-slate-900 text-center mb-12">
 				Featured products
 			</div>
-			<div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:flex justify-evenly ">
+			<div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:flex justify-evenly ">
 				{products.map((product: any, index: number) => {
 					return (
 						<div>

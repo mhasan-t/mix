@@ -43,7 +43,7 @@ const types = [
 
 export default function TypeList() {
 	return (
-		<div className="md:flex grid grid-cols-3">
+		<div className="lg:flex grid grid-cols-3 md:grid-cols-4">
 			{types.map((type: any, index: number) => {
 				return (
 					<div className="h-32">
