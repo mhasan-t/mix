@@ -4,23 +4,23 @@ import ProductItem from "./ProductItem";
 const products = [
 	{
 		name: "Airpods pro",
-		price: "$250",
-		rating: "4.5",
+		price: "250",
+		rating: "4",
 	},
 	{
 		name: "Usb c cable",
-		price: "$10",
-		rating: "4.5",
+		price: "10",
+		rating: "4",
 	},
 	{
 		name: "Macbook pro",
-		price: "$2500",
-		rating: "4.5",
+		price: "2500",
+		rating: "4",
 	},
 	{
 		name: "Airpods pro",
-		price: "$250",
-		rating: "4.5",
+		price: "250",
+		rating: "4",
 	},
 ];
 
