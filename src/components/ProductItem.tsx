@@ -11,7 +11,7 @@ import { useDispatch } from "react-redux";
 
 export default function ProductItem({ product }: any) {
 	function addToCart(product: any) {
-		const lsData = localStorage.getItem("cart");
+		const lsData = window ? localStorage.getItem("cart") : "";
 		console.log(lsData);
 
 		if (

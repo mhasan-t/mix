@@ -7,7 +7,7 @@ import React, { useState } from "react";
 
 export default function page() {
 	const [items, setItems] = useState(
-		JSON.parse(localStorage.getItem("cart") as string)
+		JSON.parse(window ? (localStorage.getItem("cart") as string) : "[]")
 	);
 
 	return (
