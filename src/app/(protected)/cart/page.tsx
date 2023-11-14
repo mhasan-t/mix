@@ -6,9 +6,7 @@ import CartItemList from "@/components/CartItemList";
 import React, { useState } from "react";
 
 export default function page() {
-	const [items, setItems] = useState(
-		JSON.parse(window ? (localStorage.getItem("cart") as string) : "[]")
-	);
+	const [items, setItems] = useState([]);
 
 	return (
 		<div>

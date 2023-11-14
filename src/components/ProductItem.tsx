@@ -10,23 +10,7 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 
 export default function ProductItem({ product }: any) {
-	function addToCart(product: any) {
-		const lsData = window ? localStorage.getItem("cart") : "";
-		console.log(lsData);
-
-		if (
-			lsData === null ||
-			lsData.length === 0 ||
-			Object.keys(lsData).length === 0
-		) {
-			localStorage.setItem("cart", JSON.stringify([product]));
-		} else {
-			let cartItems = JSON.parse(lsData);
-			console.log(cartItems);
-			cartItems.push(product);
-			localStorage.setItem("cart", JSON.stringify(cartItems));
-		}
-	}
+	function addToCart(product: any) {}
 
 	return (
 		<div className="bg-white rounded-md shadow-sm flex flex-col gap-1 w-60 h-auto justify-center align-center text-center p-4">

@@ -31,7 +31,6 @@ export default function Register() {
 
 		if (res.status === 201) {
 			let data = await res.json();
-			localStorage.setItem("token", data.token);
 			router.push("/home");
 		}
 	}

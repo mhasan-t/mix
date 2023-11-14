@@ -20,7 +20,6 @@ export default function Login() {
 
 		if (res.status === 201) {
 			let data = await res.json();
-			localStorage.setItem("token", data.token);
 			console.log("logged in");
 			router.push("/home");
 		}

@@ -6,7 +6,7 @@ export default function OrderSummaryComponent({ orderData }: any) {
 	const [subtotal, setSubtotal] = useState(0);
 	const [shipping, setShipping] = useState(10);
 	const [tax, setTax] = useState(5);
-	const items = JSON.parse(localStorage.getItem("cart") as string);
+	const items: any = [];
 
 	useEffect(() => {
 		let subt = items.reduce((acc: any, cur: any) => {
@@ -25,7 +25,6 @@ export default function OrderSummaryComponent({ orderData }: any) {
 		//   }),
 		// }).then((res) => {
 		//   if (res.status === 200) {
-		//     localStorage.removeItem("cart");
 		//     window.location.href = "/order";
 		//   }
 		// });
@@ -43,8 +42,7 @@ export default function OrderSummaryComponent({ orderData }: any) {
 			headers: {
 				"Content-Type": "application/json",
 				Accept: "application/json",
-				Authorization:
-					"Bearer " + (window ? localStorage.getItem("token") : ""),
+				Authorization: "Bearer ",
 			},
 			body: JSON.stringify(data),
 		});
@@ -52,7 +50,6 @@ export default function OrderSummaryComponent({ orderData }: any) {
 		console.log(res);
 
 		if (res.status === 200) {
-			localStorage.removeItem("cart");
 			window.location.href = "/order";
 		}
 	}
