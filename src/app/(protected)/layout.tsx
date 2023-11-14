@@ -20,14 +20,14 @@ export default function RootLayout({
 	return (
 		<div className="pt-2 px-2 bg-slate-50">
 			{/* TOPBAR */}
-			<div className="flex flex-col md:flex-row md:justify-between items-center bg-blue-900 font-bold text-xl text-white p-2 md:px-8 rounded-full mb-6">
+			<div className="flex flex-col md:flex-row md:justify-between items-center bg-[#00398f] font-bold text-xl text-white p-2 md:px-8 rounded-full mb-6">
 				<div>PHONELECTRONICS</div>
 				<div className="flex flex-col md:flex-row md:gap-8 gap-2">
 					<div className="relative w-full">
 						<input
 							type="text"
 							placeholder="Search item here"
-							className="rounded-2xl p-2 px-8 text-sm text-white bg-blue-900 brightness-125 bg-opacity-80 border-none font-medium  w-full md:w-96"
+							className="rounded-2xl p-2 px-8 text-sm text-white bg-[#00398f] brightness-125 bg-opacity-80 border-none font-medium  w-full md:w-96"
 						/>
 						<div className="absolute right-1 top-0 h-full flex justify-center items-center bg-orange-400 p-2 rounded-full">
 							<FontAwesomeIcon

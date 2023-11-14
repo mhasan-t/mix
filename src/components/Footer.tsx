@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
 	return (
-		<div className="bg-blue-900 p-8 md:p-20 rounded-2xl text-white">
+		<div className="bg-[#00398f] p-8 md:p-20 rounded-2xl text-white">
 			<div className="grid grid-col-1 md:grid-cols-5 gap-6  items-stretch font-white  pb-10 mb-10 border-b border-white">
 				<div className="flex flex-col gap-4 md:col-span-2 max-w-[400px]">
 					<div className="text-xl font-bold">PHONELECTRONICS</div>
