@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input,
+input:hover,
+input:active,
+input:focus {
+	outline: none;
+}
+
+@layer base {
+	input {
+		@apply border-slate-200 border-[1px] rounded-md p-1;
+	}
+}
