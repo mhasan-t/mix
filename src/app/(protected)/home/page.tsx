@@ -144,7 +144,7 @@ export default function page() {
 			</div>
 
 			<div className="flex flex-col md:flex-row gap-8 mb-12">
-				<div className="max-w-400px flex flex-col">
+				<div className="w-1/3 min-w-[300px] max-w-[400px] flex flex-col">
 					<div className="pb-4 mb-4 border-b-2 border-slate-200">
 						<AllCategories />
 					</div>

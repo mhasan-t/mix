@@ -6,14 +6,14 @@ export default function FilterByRating() {
 	return (
 		<div className="w-full">
 			<div className="text-lg font-bold text-slate-900 mb-4">
-				Filter by location
+				Filter by rating
 			</div>
 
 			<div className="flex flex-col gap-2">
 				{[...Array(5)].map((item, index) => (
 					<div className="flex items-center gap-2">
 						<input type="checkbox" name="" id="" />
-						<label className="text-gray-400 text-sm" htmlFor="">
+						<label className="text-gray-400 text-lg" htmlFor="">
 							{[...Array(index + 1)].map((item, index) => (
 								<FontAwesomeIcon
 									icon={faStar}

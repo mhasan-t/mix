@@ -20,7 +20,7 @@ export default function FilterByLocation() {
 				{locations.map((item, index) => (
 					<div key={index} className="flex items-center gap-2">
 						<input type="checkbox" name="" id="" />
-						<label className="text-gray-400 text-sm" htmlFor="">
+						<label className="text-gray-400 text-lg" htmlFor="">
 							{item}
 						</label>
 					</div>

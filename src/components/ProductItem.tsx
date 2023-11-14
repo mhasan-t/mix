@@ -21,28 +21,32 @@ export default function ProductItem({ product }: any) {
 				height={300}
 				className="rounded-xl"
 			/>
-			<span className="text-lg line-clamp-1">{product.name}</span>
-			<span className="text-lg text-orange-600">${product.price}</span>
-			<div className="flex justify-around text-center items-center">
-				<span className="text-lg w-1/2">
+			<span className="text-2xl line-clamp-1">{product.name}</span>
+			<span className="text-2xl text-orange-600">${product.price}</span>
+
+			<div className="w-full flex gap-4 justify-center text-center items-center mt-2">
+				<div className="text-lg ">
 					<FontAwesomeIcon
 						icon={faStar}
-						className="mr-1 text-orange-400"
+						className="mr-1 text-orange-400 text-lg "
 					/>
-					{product.rating}
-				</span>
-				<span className="text-sm text-gray-400 w-1/2">Sold 99</span>
+					<span className="text-gray-400">{product.rating}.0</span>
+				</div>
+				<div className="text-lg text-gray-400 ">Sold 99</div>
 			</div>
 
 			<div className="flex justify-around mt-4">
 				<button
-					className="bg-orange-400 p-2 px-4 rounded-2xl text-white font-medium text-sm"
+					className="bg-orange-400 p-2 px-8 rounded-3xl text-white font-medium text-lg"
 					onClick={() => {
 						addToCart(product);
 					}}
 				>
-					<FontAwesomeIcon icon={faCartShopping} className="mr-2" />
-					Add to cart
+					<FontAwesomeIcon
+						icon={faCartShopping}
+						className="mr-2 text-xl"
+					/>
+					<span className="text-lg">Add to cart</span>
 				</button>
 				<button
 					className=" text-gray-300 text-xl"
