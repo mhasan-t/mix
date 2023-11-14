@@ -13,7 +13,7 @@ export default function ProductItem({ product }: any) {
 	function addToCart(product: any) {}
 
 	return (
-		<div className="bg-white rounded-md shadow-sm flex flex-col gap-1 w-72 h-auto justify-center align-center text-center p-4">
+		<div className="bg-white rounded-md shadow-sm flex flex-col gap-1  h-auto justify-center align-center text-center p-4">
 			<img
 				src={"http://placekitten.com/300/300"}
 				alt={product.title}
@@ -21,8 +21,8 @@ export default function ProductItem({ product }: any) {
 				height={300}
 				className="rounded-xl"
 			/>
-			<span className="text-2xl line-clamp-1">{product.name}</span>
-			<span className="text-2xl text-orange-600">${product.price}</span>
+			<span className="text-2xl line-clamp-1 mt-2">{product.name}</span>
+			<span className="text-xl text-orange-400">${product.price}</span>
 
 			<div className="w-full flex gap-4 justify-center text-center items-center mt-2">
 				<div className="text-lg ">
@@ -37,7 +37,7 @@ export default function ProductItem({ product }: any) {
 
 			<div className="flex justify-around mt-4">
 				<button
-					className="bg-orange-400 p-2 px-8 rounded-3xl text-white font-medium text-lg"
+					className="bg-orange-400 p-3 px-6 rounded-3xl text-white font-medium text-lg flex"
 					onClick={() => {
 						addToCart(product);
 					}}
@@ -46,7 +46,7 @@ export default function ProductItem({ product }: any) {
 						icon={faCartShopping}
 						className="mr-2 text-xl"
 					/>
-					<span className="text-lg">Add to cart</span>
+					<div className="text-sm">Add to cart</div>
 				</button>
 				<button
 					className=" text-gray-300 text-xl"

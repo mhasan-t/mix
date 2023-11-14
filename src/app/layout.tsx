@@ -1,8 +1,12 @@
 import "./globals.css";
-import { Inter, Roboto } from "next/font/google";
+import { Inter, Roboto, Fira_Sans } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 const roboto = Roboto({
+	weight: ["100", "300", "400", "500", "700", "900"],
+	subsets: ["latin"],
+});
+const fira_sans = Fira_Sans({
 	weight: ["100", "300", "400", "500", "700", "900"],
 	subsets: ["latin"],
 });
@@ -19,7 +23,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={roboto.className}>{children}</body>
+			<body className={fira_sans.className}>{children}</body>
 		</html>
 	);
 }
