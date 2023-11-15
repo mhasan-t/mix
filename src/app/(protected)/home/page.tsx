@@ -157,6 +157,15 @@ export default function page() {
 					<div className="pb-4 mb-4 border-b-2 border-slate-200">
 						<FilterByRating />
 					</div>
+
+					<div className="flex flex-col justify-center items-center w-full mt-16">
+						<button className="bg-orange-400 rounded-3xl p-4 px-24 text-white font-bold max-w-[300px]">
+							Filter
+						</button>
+						<button className=" rounded-3xl p-4 px-16 text-blue-900 font-bold max-w-[300px]">
+							Reset Filters
+						</button>
+					</div>
 				</div>
 				<div>
 					<HomeProductList data={data} />

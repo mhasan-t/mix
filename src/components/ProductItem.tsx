@@ -35,7 +35,7 @@ export default function ProductItem({ product }: any) {
 				<div className="text-lg text-gray-400 ">Sold 99</div>
 			</div>
 
-			<div className="flex justify-around mt-4">
+			<div className="flex justify-center mt-4 gap-4">
 				<button
 					className="bg-orange-400 p-3 px-6 rounded-3xl text-white font-medium text-lg flex"
 					onClick={() => {
@@ -48,6 +48,7 @@ export default function ProductItem({ product }: any) {
 					/>
 					<div className="text-sm">Add to cart</div>
 				</button>
+
 				<button
 					className=" text-gray-300 text-xl"
 					onClick={() => {

@@ -1,13 +1,12 @@
 import "./globals.css";
-import { Inter, Roboto, Fira_Sans } from "next/font/google";
+import { Fira_Sans, Quicksand } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
-const roboto = Roboto({
+const fira_sans = Fira_Sans({
 	weight: ["100", "300", "400", "500", "700", "900"],
 	subsets: ["latin"],
 });
-const fira_sans = Fira_Sans({
-	weight: ["100", "300", "400", "500", "700", "900"],
+const quicksand = Quicksand({
+	weight: ["300", "400", "500", "700"],
 	subsets: ["latin"],
 });
 
@@ -23,7 +22,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={fira_sans.className}>{children}</body>
+			<body className={quicksand.className}>{children}</body>
 		</html>
 	);
 }

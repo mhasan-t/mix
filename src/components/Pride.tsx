@@ -11,7 +11,7 @@ export default function Pride() {
 						icon={faCar}
 						className="text-6xl text-blue-900"
 					/>
-					<div className="text-xl font-medium">54 Brands</div>
+					<div className="text-xl font-bold">54 Brands</div>
 					<div className="text-sm text-gray-400">
 						Lorem Ipsum dolor dit amet
 					</div>
@@ -22,7 +22,7 @@ export default function Pride() {
 						icon={faCar}
 						className="text-6xl text-blue-900"
 					/>
-					<div className="text-xl font-medium">1000 Customers</div>
+					<div className="text-xl font-bold">COD Services</div>
 					<div className="text-sm text-gray-400">
 						Lorem Ipsum dolor dit amet
 					</div>
@@ -33,7 +33,7 @@ export default function Pride() {
 						icon={faCar}
 						className="text-6xl text-blue-900"
 					/>
-					<div className="text-xl font-medium">Fast Delivery</div>
+					<div className="text-xl font-bold">Fast Delivery</div>
 					<div className="text-sm text-gray-400">
 						Lorem Ipsum dolor dit amet
 					</div>
@@ -44,7 +44,7 @@ export default function Pride() {
 						icon={faCar}
 						className="text-6xl text-blue-900"
 					/>
-					<div className="text-xl font-medium">
+					<div className="text-xl font-bold">
 						100% Original Product
 					</div>
 					<div className="text-sm text-gray-400">
