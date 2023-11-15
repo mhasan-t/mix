@@ -33,10 +33,10 @@ export default function BrandLogos() {
 			<div className="text-4xl font-bold text-slate-900 text-center mb-12">
 				Shop by brand
 			</div>
-			<div className="grid grid-cols-3 gap-4 lg:flex justify-evenly divide-x-2 divide-slate-300">
+			<div className="grid grid-cols-2 gap-4 items-stretch md:grid-cols-3 md:gap-4 lg:flex justify-evenly lg:divide-x-2 divide-slate-300">
 				{brands.map((brand: any, index: number) => {
 					return (
-						<div className="flex justify-center items-center w-full opacity-75">
+						<div className="flex justify-center items-center w-full opacity-75 py-4">
 							<img
 								src={brand.logo}
 								alt=""

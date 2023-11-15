@@ -131,7 +131,7 @@ export default function page() {
 
 	return (
 		<div className="min-h-screen max-w-[100vw] flex flex-col items-center gap-4">
-			<div className="mx-2 max-w-6xl">
+			<div className="mx-2 max-w-7xl">
 				<BannerComponent />
 			</div>
 
